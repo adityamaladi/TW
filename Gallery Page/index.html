@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gallery Project TW</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .gallery {
+        padding: 20px;
+    }
+
+    .gallery ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .gallery ul li {
+        list-style: none;
+        font-size: 20px;
+        font-family: "Roboto", serif;
+        background-color: rgb(215, 215, 215);
+        margin: 5px;
+        padding: 8px 20px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        transition: 0.4s linear;
+        border-radius: 21px;
+    }
+
+    .gallery ul li:hover {
+        background-color: #FBBB09;
+    }
+
+    .gallery ul li.active {
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+
+    .items-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .items {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    .items img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="gallery">
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="mobile">Kanopy</li>
+            <li class="list" data-filter="camera">Gerbang/Pagar</li>
+            <li class="list" data-filter="watch">Kubbah</li>
+            <li class="list" data-filter="shoe">Cafe Box</li>
+            <li class="list" data-filter="headphone">Covid-19</li>
+        </ul>
+
+        <!-- items all -->
+        <div class="items-container">
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy2.jpg">
+                    <img src="assets/Kanopy/Kanopy2.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy4.jpg">
+                    <img src="assets/Kanopy/Kanopy4.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar11.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar11.jpg" alt="camera1.jpg">
+                </a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar15.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar15.jpg" alt="camera1.jpg">
+                </a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar2.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar2.jpg" alt="camera1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah7.jpg">
+                    <img src="assets/Kubbah/kubbah7.jpg" alt="watch1.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah6.jpg">
+                    <img src="assets/Kubbah/kubbah6.jpg" alt="watch1.jpg">
+                </a>
+            </div>
+
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box8.jpeg">
+                    <img src="assets/cafe box/Cafe Box8.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box2.jpeg">
+                    <img src="assets/cafe box/Cafe Box2.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box15.jpeg">
+                    <img src="assets/cafe box/Cafe Box15.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah29.jpg">
+                    <img src="assets/Kubbah/kubbah29.jpg" alt="watch1.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah35.jpg">
+                    <img src="assets/Kubbah/kubbah35.jpg" alt="watch1.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah38.jpg">
+                    <img src="assets/Kubbah/kubbah38.jpg" alt="watch1.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat5.jpg">
+                    <img src="assets/rumah darurat/rumah darurat5.jpg" alt="headphone1.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat30.jpg">
+                    <img src="assets/rumah darurat/rumah darurat30.jpg" alt="headphone1.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat38.jpg">
+                    <img src="assets/rumah darurat/rumah darurat38.jpg" alt="headphone1.jpg">
+                </a>
+            </div>
+
+
+
+            <!-- Items Gerbang Pagar .camera --------------------------------------------------------------------------------->
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar1.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar1.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar2.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar2.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar3.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar3.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar4.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar4.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar5.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar5.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar6.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar6.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar7.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar7.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar8.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar8.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar9.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar9.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar10.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar10.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar11.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar11.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar12.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar12.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar13.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar13.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar14.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar14.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar15.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar15.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar16.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar16.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar17.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar17.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar18.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar18.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar19.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar19.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar20.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar20.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar21.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar21.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar22.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar22.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar23.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar23.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar24.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar24.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar25.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar25.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar26.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar26.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar27.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar27.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar28.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar28.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar29.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar29.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar30.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar10.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar31.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar31.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar32.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar12.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar33.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar33.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar34.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar34.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar35.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar35.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar36.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar36.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar37.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar37.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar38.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar38.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar39.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar39.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar40.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar40.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar41.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar41.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar42.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar42.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar43.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar43.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar44.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar44.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar45.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar45.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar46.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar46.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar47.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar47.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar48.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar48.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar49.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar49.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar50.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar50.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar51.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar51.jpg" alt=""></a>
+            </div>
+
+            <div class="items camera">
+                <a href="assets/Gerbang Pagar/Gerbang pagar52.jpg">
+                    <img src="assets/Gerbang Pagar/Gerbang pagar52.jpg" alt=""></a>
+            </div>
+
+
+
+            <!-- Items Kanopy .mobile ---------------------------------------------------------------------------------------------->
+
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy1.jpg">
+                    <img src="assets/Kanopy/Kanopy1.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy2.jpg">
+                    <img src="assets/Kanopy/Kanopy2.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy3.jpg">
+                    <img src="assets/Kanopy/Kanopy3.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy4.jpg">
+                    <img src="assets/Kanopy/Kanopy4.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy5.jpg">
+                    <img src="assets/Kanopy/Kanopy5.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy6.jpg">
+                    <img src="assets/Kanopy/Kanopy6.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy7.jpg">
+                    <img src="assets/Kanopy/Kanopy7.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy8.jpg">
+                    <img src="assets/Kanopy/Kanopy8.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy9.jpg">
+                    <img src="assets/Kanopy/Kanopy9.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy10.jpg">
+                    <img src="assets/Kanopy/Kanopy10.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy11.jpg">
+                    <img src="assets/Kanopy/Kanopy11.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <div class="items mobile">
+                <a href="assets/Kanopy/Kanopy12.jpg">
+                    <img src="assets/Kanopy/Kanopy12.jpg" alt="mobile1.jpg">
+                </a>
+            </div>
+
+            <!-- Items Kanopy .Watch ---------------------------------------------------------------------------------------------->
+
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah1.jpg">
+                    <img src="assets/Kubbah/kubbah1.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah2.jpg">
+                    <img src="assets/Kubbah/kubbah2.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah3.jpg">
+                    <img src="assets/Kubbah/kubbah3.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah4.jpg">
+                    <img src="assets/Kubbah/kubbah4.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah5.jpg">
+                    <img src="assets/Kubbah/kubbah5.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah6.jpg">
+                    <img src="assets/Kubbah/kubbah6.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah7.jpg">
+                    <img src="assets/Kubbah/kubbah7.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah8.jpg">
+                    <img src="assets/Kubbah/kubbah8.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah9.jpg">
+                    <img src="assets/Kubbah/kubbah9.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah10.jpg">
+                    <img src="assets/Kubbah/kubbah10.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah1.jpg">
+                    <img src="assets/Kubbah/kubbah10.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah12.jpg">
+                    <img src="assets/Kubbah/kubbah12.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah13.jpg">
+                    <img src="assets/Kubbah/kubbah13.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah14.jpg">
+                    <img src="assets/Kubbah/kubbah14.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah15.jpg">
+                    <img src="assets/Kubbah/kubbah15.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah16.jpg">
+                    <img src="assets/Kubbah/kubbah16.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah17.jpg">
+                    <img src="assets/Kubbah/kubbah17.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah18.jpg">
+                    <img src="assets/Kubbah/kubbah18.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah19.jpg">
+                    <img src="assets/Kubbah/kubbah19.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah20.jpg">
+                    <img src="assets/Kubbah/kubbah20.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah21.jpg">
+                    <img src="assets/Kubbah/kubbah21.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah22.jpg">
+                    <img src="assets/Kubbah/kubbah22.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah23.jpg">
+                    <img src="assets/Kubbah/kubbah23.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah24.jpg">
+                    <img src="assets/Kubbah/kubbah24.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah25.jpg">
+                    <img src="assets/Kubbah/kubbah25.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah26.jpg">
+                    <img src="assets/Kubbah/kubbah26.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah27.jpg">
+                    <img src="assets/Kubbah/kubbah27.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah28.jpg">
+                    <img src="assets/Kubbah/kubbah28.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah29.jpg">
+                    <img src="assets/Kubbah/kubbah29.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah30.jpg">
+                    <img src="assets/Kubbah/kubbah30.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah31.jpg">
+                    <img src="assets/Kubbah/kubbah31.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah32.jpg">
+                    <img src="assets/Kubbah/kubbah32.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah33.jpg">
+                    <img src="assets/Kubbah/kubbah33.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah34.jpg">
+                    <img src="assets/Kubbah/kubbah34.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah35.jpg">
+                    <img src="assets/Kubbah/kubbah35.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah36.jpg">
+                    <img src="assets/Kubbah/kubbah6.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah37.jpg">
+                    <img src="assets/Kubbah/kubbah37.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah38.jpg">
+                    <img src="assets/Kubbah/kubbah38.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah39.jpg">
+                    <img src="assets/Kubbah/kubbah39.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah40.jpg">
+                    <img src="assets/Kubbah/kubbah40.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah41.jpg">
+                    <img src="assets/Kubbah/kubbah41.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah42.jpg">
+                    <img src="assets/Kubbah/kubbah42.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah43.jpg">
+                    <img src="assets/Kubbah/kubbah43.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah44.jpg">
+                    <img src="assets/Kubbah/kubbah44.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah45.jpg">
+                    <img src="assets/Kubbah/kubbah45.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+            <div class="items watch">
+                <a href="assets/Kubbah/kubbah46.jpg">
+                    <img src="assets/Kubbah/kubbah46.jpg" alt="watch3.jpg">
+                </a>
+            </div>
+
+
+            <!-- Items Rumah darurat covid-19 .headphone -------------------------------------------------------------------------->
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat1.jpg">
+                    <img src="assets/rumah darurat/rumah darurat1.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat2.jpg">
+                    <img src="assets/rumah darurat/rumah darurat2.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat3.jpg">
+                    <img src="assets/rumah darurat/rumah darurat3.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat4.jpg">
+                    <img src="assets/rumah darurat/rumah darurat4.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat5.jpg">
+                    <img src="assets/rumah darurat/rumah darurat5.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat6.jpg">
+                    <img src="assets/rumah darurat/rumah darurat6.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat7.jpg">
+                    <img src="assets/rumah darurat/rumah darurat7.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat8.jpg">
+                    <img src="assets/rumah darurat/rumah darurat8.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat9.jpg">
+                    <img src="assets/rumah darurat/rumah darurat9.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat10.jpg">
+                    <img src="assets/rumah darurat/rumah darurat10.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat1.jpg">
+                    <img src="assets/rumah darurat/rumah darurat11.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat12.jpg">
+                    <img src="assets/rumah darurat/rumah darurat12.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat13.jpg">
+                    <img src="assets/rumah darurat/rumah darurat13.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat14.jpg">
+                    <img src="assets/rumah darurat/rumah darurat14.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat15.jpg">
+                    <img src="assets/rumah darurat/rumah darurat15.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat16.jpg">
+                    <img src="assets/rumah darurat/rumah darurat16.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat17.jpg">
+                    <img src="assets/rumah darurat/rumah darurat17.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat18.jpg">
+                    <img src="assets/rumah darurat/rumah darurat18.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat19.jpg">
+                    <img src="assets/rumah darurat/rumah darurat19.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat20.jpg">
+                    <img src="assets/rumah darurat/rumah darurat20.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat21.jpg">
+                    <img src="assets/rumah darurat/rumah darurat21.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat22.jpg">
+                    <img src="assets/rumah darurat/rumah darurat22.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat23.jpg">
+                    <img src="assets/rumah darurat/rumah darurat23.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat24.jpg">
+                    <img src="assets/rumah darurat/rumah darurat24.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat25.jpg">
+                    <img src="assets/rumah darurat/rumah darurat25.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat26.jpg">
+                    <img src="assets/rumah darurat/rumah darurat26.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat27.jpg">
+                    <img src="assets/rumah darurat/rumah darurat27.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat28.jpg">
+                    <img src="assets/rumah darurat/rumah darurat28.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat29.jpg">
+                    <img src="assets/rumah darurat/rumah darurat29.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat30.jpg">
+                    <img src="assets/rumah darurat/rumah darurat30.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat31.jpg">
+                    <img src="assets/rumah darurat/rumah darurat31.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat32.jpg">
+                    <img src="assets/rumah darurat/rumah darurat32.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat33.jpg">
+                    <img src="assets/rumah darurat/rumah darurat33.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat34.jpg">
+                    <img src="assets/rumah darurat/rumah darurat34.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat35.jpg">
+                    <img src="assets/rumah darurat/rumah darurat35.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat36.jpg">
+                    <img src="assets/rumah darurat/rumah darurat36.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat37.jpg">
+                    <img src="assets/rumah darurat/rumah darurat37.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+            <div class="items headphone">
+                <a href="assets/rumah darurat/rumah darurat38.jpg">
+                    <img src="assets/rumah darurat/rumah darurat38.jpg" alt="headphone2.jpg">
+                </a>
+            </div>
+
+
+            <!-- Items cafe box .shoe -->
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box1.jpeg">
+                    <img src="assets/cafe box/Cafe Box1.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box2.jpeg">
+                    <img src="assets/cafe box/Cafe Box2.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box3.jpeg">
+                    <img src="assets/cafe box/Cafe Box3.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box4.jpeg">
+                    <img src="assets/cafe box/Cafe Box4.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box5.jpeg">
+                    <img src="assets/cafe box/Cafe Box5.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box6.jpeg">
+                    <img src="assets/cafe box/Cafe Box6.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box7.jpeg">
+                    <img src="assets/cafe box/Cafe Box7.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box8.jpeg">
+                    <img src="assets/cafe box/Cafe Box8.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box9.jpeg">
+                    <img src="assets/cafe box/Cafe Box9.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box10.jpeg">
+                    <img src="assets/cafe box/Cafe Box10.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box11.jpeg">
+                    <img src="assets/cafe box/Cafe Box11.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box12.jpeg">
+                    <img src="assets/cafe box/Cafe Box12.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box13.jpeg">
+                    <img src="assets/cafe box/Cafe Box13.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box14.jpeg">
+                    <img src="assets/cafe box/Cafe Box14.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+            <div class="items shoe">
+                <a href="assets/cafe box/Cafe Box15.jpeg">
+                    <img src="assets/cafe box/Cafe Box15.jpeg" alt="shoe1.jpg">
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- JQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".list").click(function () {
+
+                let value = $(this).attr("data-filter");
+
+                if (value == "all") {
+                    $(".items").show(0);
+                }
+                else {
+                    $(".items").not("." + value).hide(0);
+                    $(".items").filter("." + value).show(0);
+                }
+
+                $(".list").removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+            $('.items-container').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image',
+                // other options
+
+                gallery: {
+                    enabled: true, // set to true to enable gallery
+
+                    preload: [0, 2], // read about this option in next Lazy-loading section
+
+                    navigateByImgClick: true,
+
+                    arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+
+                    tPrev: 'Previous (Left arrow key)', // title for left button
+                    tNext: 'Next (Right arrow key)', // title for right button
+                    tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+                },
+
+                mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+                zoom: {
+                    enabled: true, // By default it's false, so don't forget to enable it
+
+                    duration: 300, // duration of the effect, in milliseconds
+                    easing: 'ease-in-out', // CSS transition easing function
+
+                    // The "opener" function should return the element from which popup will be zoomed in
+                    // and to which popup will be scaled down
+                    // By defailt it looks for an image tag:
+                    opener: function (openerElement) {
+                        // openerElement is the element on which popup was initialized, in this case its <a> tag
+                        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                        return openerElement.is('img') ? openerElement : openerElement.find('img');
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
