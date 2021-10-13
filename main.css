@@ -61,7 +61,7 @@ img{
     position: relative;
 }
 .product-content{
-    background: var(--gray);
+    background:#f9fafb;
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
 }
