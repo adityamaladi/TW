@@ -364,6 +364,7 @@ footer.footer .move-up span:hover{
 
 .landingText h3{
     font-size: 12px;
+    margin: 0 !important;
 }
 
 .landingText .btn{
